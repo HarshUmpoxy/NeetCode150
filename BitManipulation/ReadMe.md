@@ -4,14 +4,14 @@ A crisp, high-yield guide to mastering Bit Manipulation.
 
 ## 1. Core Operators
 
-| Operator | Symbol | Description | Example ($A=5 (101), B=3 (011)$) |
+| Operator | Symbol | Description | Example (A=5 (101), B=3 (011)) |
 | :--- | :---: | :--- | :--- |
-| **AND** | `&` | Both bits must be 1 | $5 \& 3 = 1 (001)$ |
-| **OR** | `\|` | At least one bit is 1 | $5 \| 3 = 7 (111)$ |
-| **XOR** | `^` | Bits must be different | $5 \wedge 3 = 6 (110)$ |
-| **NOT** | `~` | Inverts all bits | $\sim 5 = -6$ (Two's complement) |
-| **Left Shift** | `<<` | Shift bits left (Multiply by $2^k$) | $5 \ll 1 = 10 (1010)$ |
-| **Right Shift** | `>>` | Shift bits right (Divide by $2^k$) | $5 \gg 1 = 2 (0010)$ |
+| **AND** | `&` | Both bits must be 1 | `5 & 3 = 1` (001) |
+| **OR** | `\|` | At least one bit is 1 | `5 \| 3 = 7` (111) |
+| **XOR** | `^` | Bits must be different | `5 ^ 3 = 6` (110) |
+| **NOT** | `~` | Inverts all bits | `~5 = -6` (Two's complement) |
+| **Left Shift** | `<<` | Shift bits left (Multiply by $2^k$) | `5 << 1 = 10` (1010) |
+| **Right Shift** | `>>` | Shift bits right (Divide by $2^k$) | `5 >> 1 = 2` (0010) |
 
 > **Note**: Right shift `>>` is usually arithmetic (preserves sign bit) in Java/C++ for signed integers. Unsigned right shift `>>>` (Java) fills with 0.
 
